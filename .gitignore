@@ -1,0 +1,8 @@
+# NEVER commit these — they are the board in PLAINTEXT.
+# Committing /rebuild puts every role, salary and resume note on GitHub in the
+# clear and makes the encryption on docs/index.html pointless.
+/rebuild/
+rebuild/
+*.json
+!package.json
+.DS_Store
