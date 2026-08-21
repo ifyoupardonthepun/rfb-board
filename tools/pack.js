@@ -178,6 +178,7 @@ body{margin:0;background:var(--ground);color:var(--ink);
     app.appendChild(d);
 
     window.RFB_STATIC = true;
+    window.RFB_PASS = pass;   // used only to encrypt marks before they leave the browser
     var s = document.createElement("script"); s.id = "app-src";
     s.textContent = (p.render ? p.render + String.fromCharCode(10) : "") + p.app;
     document.body.appendChild(s);
